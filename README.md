@@ -6,22 +6,17 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+________________________________________
+### Developer remark
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+According to the StayFriends GmbH [challenge](https://gist.github.com/joaquindiazs/1a5460bc4ad7ba5068b4ae9a5b0b8489), the same project fulfills the specified tasks.
 
-## Running end-to-end tests
+I'd like to make some observations for the code reviewer: 
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- The variable **iterablePersonIndexes** defined in AppComponent can be easily resolved in a Pipe from the template side.
+- The library **ngxs** is installed in the application (From I beginning I thought to store the data from the json file in the state application. I decided not to use it because the data doesn't change in the lifecycle of the app).
+- Mixins and variables could be used to reuse styles.
