@@ -1,0 +1,55 @@
+.app-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 5px;
+
+  .app-title {
+    text-transform: uppercase;
+    background-color: rgb(230, 230, 230);
+    color: rgb(112, 112, 112);
+    padding: 15px;
+  }
+
+  .states-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .state-card {
+      padding: 10px;
+      background-color: rgb(230, 230, 230);
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+
+      .state-content {
+        background-color: white;
+        padding: 10px;
+        h4 {
+          margin: 0;
+        }
+        span {
+          color: gray;
+        }
+      }
+    }
+
+    @media (min-width: 801px) {
+      .state-card {
+        flex: 1 1 30%;
+      }
+    }
+
+    @media (max-width: 800px) {
+      .state-card {
+        flex: 1 1 40%;
+      }
+    }
+
+    @media (max-width: 499px) {
+      .state-card {
+        flex: 1 1 100%;
+      }
+    }
+  }
+}

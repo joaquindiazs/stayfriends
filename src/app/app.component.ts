@@ -5,7 +5,7 @@ import { HelperService } from "libs/services/helper.service";
 @Component({
   selector: "app-root",
   templateUrl: "app.component.html",
-  styles: [],
+  styleUrls: ["app.component.scss"],
 })
 export class AppComponent implements OnInit {
   public bundesland?: BundeslandModel;

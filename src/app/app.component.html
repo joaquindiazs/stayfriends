@@ -1,0 +1,25 @@
+<div class="app-container">
+
+  <h1 class="app-title">Bundesländer</h1>
+
+  <div class="states-container">
+    <ng-container *ngFor="let state of bundesland?.stateList">
+      <a class="state-card" href="{{ state.url }}">
+        <div class="state-content">
+          <h4 class="state-name">{{ state.name }}</h4>
+          <span
+            ><small
+              ><b
+                >{{
+                  state.schoolCount
+                }}
+                Schulen<!-- this has to be harcoded? -->
+              </b></small
+            ></span
+          >
+        </div>
+      </a>
+    </ng-container>
+  </div>
+
+</div>
