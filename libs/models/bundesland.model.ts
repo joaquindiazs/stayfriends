@@ -1,7 +1,7 @@
 export class BundeslandModel {
   accountDeactivated?: boolean;
   stateList?: State[];
-  personIndexCounts?: PersonIndexCounts;
+  personIndexCounts?: any;
   redirect?: boolean;
   shpwMewTooltip?: boolean;
 }
@@ -16,6 +16,3 @@ class State {
   url?: string;
 }
 
-class PersonIndexCounts {
-  [key: string]: number;
-}

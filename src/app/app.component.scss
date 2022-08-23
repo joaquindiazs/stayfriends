@@ -42,7 +42,7 @@
 
     @media (max-width: 800px) {
       .state-card {
-        flex: 0 1 40%;
+        flex: 0 1 42%;
       }
     }
 
@@ -50,6 +50,24 @@
       .state-card {
         flex: 1 1 100%;
       }
+    }
+  }
+
+  .person-indexes-container {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .person-index-item {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: inherit;
+      width: 30px;
+      height: 25px;
+      background-color: rgb(230, 230, 230);
+      text-align: center;
+      padding: 5px 0 0;
     }
   }
 }

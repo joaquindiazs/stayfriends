@@ -1,5 +1,4 @@
 <div class="app-container">
-
   <h1 class="app-title">Bundesländer</h1>
 
   <div class="states-container">
@@ -22,4 +21,11 @@
     </ng-container>
   </div>
 
+  <div class="person-indexes-container">
+    <ng-container *ngFor="let index of iterablePersonIndexes">
+      <a *ngIf="index.count > 0" class="person-index-item" href="">
+        <b>{{ index.name }}</b>
+      </a>
+    </ng-container>
+  </div>
 </div>
