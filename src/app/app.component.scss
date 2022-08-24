@@ -36,13 +36,13 @@
 
     @media (min-width: 801px) {
       .state-card {
-        flex: 0 1 30%;
+        flex: 0 1 calc(33% - 25px);
       }
     }
 
     @media (max-width: 800px) {
       .state-card {
-        flex: 0 1 42%;
+        flex: 0 1 calc(50% - 25px);
       }
     }
 
